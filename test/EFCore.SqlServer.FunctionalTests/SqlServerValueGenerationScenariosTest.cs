@@ -877,7 +877,7 @@ END");
                     var beforeSave = blog.Id;
                     var beforeSaveNotId = blog.NotId;
 
-                    Assert.NotEqual(default, beforeSave);
+                    Assert.Equal(default, beforeSave);
                     Assert.Equal(default, beforeSaveNotId);
 
                     context.SaveChanges();
